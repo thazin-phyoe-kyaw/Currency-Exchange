@@ -3,9 +3,9 @@ import { Autocomplete, Grid, TextField } from "@mui/material";
 
 function CurrencyRow({ countries, label, onChangeCurrency, selectCurrency }) {
   return (
-    <Grid item md={5}>
+    <Grid item xs={12} md={5}>
       <Autocomplete
-        options={countries}
+        options={Object.keys(countries)}
         fullWidth
         value={selectCurrency}
         onChange={onChangeCurrency}

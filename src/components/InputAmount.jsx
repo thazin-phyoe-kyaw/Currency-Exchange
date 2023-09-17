@@ -3,7 +3,7 @@ import React from "react";
 
 function InputAmount({ onChageAmount }) {
   return (
-    <Grid item md={5}>
+    <Grid item xs={12} md={5}>
       <TextField
         onChange={onChageAmount}
         label="Amount"

@@ -1,11 +1,12 @@
-import "./App.css";
+import { Suspense } from "react";
 import CurrencyExchange from "./page/CurrencyExchange.jsx";
+import Loading from "./components/Loading.jsx";
 
 function App() {
   return (
-    <div className="App">
+    <Suspense fallback={<Loading />}>
       <CurrencyExchange />
-    </div>
+    </Suspense>
   );
 }
 export default App;
